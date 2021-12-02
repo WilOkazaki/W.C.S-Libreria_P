@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> W.C.S Libreria</title>
+    
+    <!-- Llamando al CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bodyregistro.css" rel="stylesheet">
+  </head>
+ 
+  <body class="text-center">
+    <!-- Formulario del Registro -->
+    <main class="form-registro">
+      <form action="/registro" method="post" >
+        <img class="d-block mx-auto mb-4" src="img/libro.png" width="120" height="120">
+          
+        <h4>REGISTRARSE</h4>
+        <h4>W.C.S Libreria</h4>
+
+        <div>
+          <input class="controls" id="nombre"  name="nombre" type="text" placeholder="Ingrese Nombre y Apellido">  
+          <input class="controls" id="usuario" name="usuario" type="text" placeholder="Ingrese Usuario">
+          <input class="controls" id="contraseña" name="contraseña" type="password" placeholder="Ingrese contraseña">
+          <p>Estoy de acuerdo <a href="#"> Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar">
+          <p><a href="/login_usu"> ¿Ya tengo una cuenta?</a></p>
+        </div>
+      </form>
+    </main>
+        
+      
+    <script scr="js/bootstrap.bundle.min.js"></script> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <% if(alert) { %>
+      <script>
+        Swal.fire({
+          title:'<%= alertTitle %>',
+          text: '<%= alertMessage %>',
+          icon: '<%= alertIcon %>',
+          showConfirmButton: <%= showConfirmButton %>,
+          timer: <%= timer %> 
+
+        }).then(()=>{ 
+        window.location = '<%= ruta %>'
+        }) 
+      
+      </script>
+    <% } %> 
+    
+  </body>
+</html>

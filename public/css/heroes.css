@@ -1,0 +1,25 @@
+body{
+  height: 100%;
+  background-image: url("/img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1000px) {
+  .rounded-lg-3 { border-radius: 50px; }
+}
+
+.form-inicio {
+  width: 1100px;
+  background-image: url("/img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  padding: 50px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px rgb(87, 178, 253);
+    
+  
+}
+

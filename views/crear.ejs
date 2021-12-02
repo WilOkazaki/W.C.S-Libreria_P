@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W.C.S Libreria </title>   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/headers.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <header class="p-1 mb-1 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <img class="bi me-2" class="bd-placeholder-img rounded-circle" src="img/libro13.png" width="120" height="120">
+          
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
+            <li><a href="/principal" class="nav-link px-2 link-dark">Inicio</a></li>
+            <li><a href="/libros" class="nav-link px-2 link-dark">Libros</a></li>
+          </ul>
+
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/perfil.png" alt="mdo" width="50" height="50" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="/logout">Cerrar cuenta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+	  <div class="container mt-4">     
+		  <div class="card border-secondary">  
+        <div class="card-header">Añadir libro</div>
+          <div class="card-body">
+				    <form action="/save" method="POST">
+					    <div class="mb-3">
+					      <label for="titulo" class="form-label">Titulo</label>
+					      <input type="text" class="form-control" id="titulo" name="titulo" tabindex="1">
+					    </div>
+					
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Autor</label>
+                <input type="text" class="form-control" id="autor" name="autor" tabindex="1">
+					  	</div> 
+
+						  <div class="mb-3">
+                <label for="titulo" class="form-label">Area</label>
+                <input type="text" class="form-control" id="area" name="area" tabindex="1">
+							</div>
+
+							<div class="mb-3">
+								<label for="titulo" class="form-label">LINK</label>
+								<input type="url" class="form-control" id="imgURL" name="imgURL" tabindex="1">
+              
+							</div>  
+
+					    <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+					    <a href="/libros" class="btn btn-secondary">Cancelar</a>
+				    </form>
+		    	</div>
+        </div>
+		  </div>        
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>

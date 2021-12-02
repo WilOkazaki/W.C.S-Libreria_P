@@ -1,0 +1,65 @@
+body {
+  display: inherit;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("/img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;}
+
+
+/* Estilo del Formulario de Ingreso */
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 30px;
+  margin: auto;
+  background: white;
+  background: -webkit-linear-gradient(to right, #78ffd6, #007991);  
+  background: linear-gradient(to right, #78ffd6, #007991); 
+  border-radius: 20px;
+  box-shadow: 7px 13px 37px rgb(87, 178, 253);
+}
+.form-signin h4{
+  height: 40px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+  
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.form-signin p {
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+}
+.form-signin a{
+  color: white;
+  text-decoration: none; 
+}
+
+.form-signin a:hover{
+  color: #ffffff;
+  text-decoration: underline; 
+}

@@ -1,0 +1,9 @@
+body {
+    display: inherit;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: url("/img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

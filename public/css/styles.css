@@ -1,0 +1,134 @@
+body {
+    display: inherit;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+   }
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.btn-bd-primary{
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0f7e8d;
+    border-color: #0f7e8d;
+}
+
+.btn-bd-primary:hover,.btn-bd-primary:active {
+    color: #ffffff;
+    background-color: #0e7e7e;
+    border-color: #0e7e7e;
+}
+.btn-bd-primary:focus{
+    box-shadow: 0 0 0 px rgba(238, 236, 241, 0.25)
+    
+}
+
+.btn-primary{
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #451163;
+    border-color: #451163;}
+
+.btn-primary:hover,.btn-bd-primary:active {
+    color: #ffffff;
+    background-color: #7a269b;
+    border-color: #7a269b;
+}
+.btn-primary:focus{
+    box-shadow: 0 0 0 px rgba(0, 0, 0, 0.25)
+    
+}
+
+
+/* Estilo para el Registro */
+
+.form-registro {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-family: 'calibri';
+    font-size: 22px;
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  
+    background: linear-gradient(to right, #78ffd6, #007991); 
+}
+
+.form-registro h4{
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+
+.controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #451163;
+    font-family: 'Calibri';
+    font-size: 18px;
+}
+
+.form-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+}
+
+.form-registro a{
+    color: white;
+    text-decoration: none; 
+}
+
+.form-registro a:hover{
+    color: #ffffff;
+    text-decoration: underline; 
+}
+
+.form-registro .botons {
+    width: 100%;
+    background: #451163;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+.bd-placehol-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placehol-img-lg {
+      font-size: 3.5rem;
+    }
+}
+

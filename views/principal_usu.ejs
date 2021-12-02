@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W.C.S Libreria </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/headers.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header class="p-1 mb-1 border-bottom">
+  
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <img class="bi me-2" class="bd-placeholder-img rounded-circle" src="img/libro.png" width="120" height="120">
+          
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
+            <li><a href="/principal_usu" class="nav-link px-2 link-dark">Inicio</a></li>
+            <li><a href="/libros_usu" class="nav-link px-2 link-dark">Libros</a></li>
+          </ul>
+          
+          <span class="li"><h2>Bienvenido:
+            <% if (usuario) { %>
+            <span class="badge"> <%= usuario.nombre %> </span> 
+          <% } %>
+          </h2>
+          </span>
+         
+              
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/perfil.png" alt="mdo" width="50" height="50" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="/logout">Cerrar cuenta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <main>
+
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="100%" opacity="10" src="img/111.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+            
+          </div>
+          
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="img/135.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Un buen libro despierta la imaginación </h1>
+                <p>Cuando terminas un buen libro, nunca se acaba. Se esconde dentro de ti. 
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="img/789.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1> Con la lectura reflejas tu realidad.</h1>
+                <p>El que lee mucho y anda mucho, ve mucho y sabe mucho.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="150" height="150" src="img/IMG_20211128_011323_576.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+            <h2>Wilmer Villarreal</h2>
+            <p>Estudiante de la Universidad Valle del Momboy, "En algun lugar de un libros, hay una frase esperandonos para darle un sentido a nuestra existencia "</p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/IMG_20211128_013133_269.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+            <h2>Carmen Castellanos</h2>
+            <p> Estudiante de la Universidad Valle del Momboy, "No es analfabeta aquel que no sabe leer, sino aquel que sabiendo leer, no lo hace "</p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="150" height="150" src="img/IMG_20211128_011411_828.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+            <h2>Sebastian Paredes</h2>
+            <p>Estudiante de la Universidad Valle del Momboy, "Llenate de conocimientos y deja volar tu imaginación a otra dimension"</p>
+          </div><!-- /.col-lg-4 -->
+
+        </div><!-- /.row -->
+      </div>
+
+   
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
